@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.content.Intent;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -105,7 +106,15 @@ public class Splash extends AppCompatActivity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+
+        int secondsDelayed = 2;
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                Intent intent = new Intent(this, RestaurantLayoutActivity.class);
+                this.startActivity(intent);
+                finish();
+            }
+        }, secondsDelayed * 1000);
     }
 
     @Override
@@ -116,6 +125,10 @@ public class Splash extends AppCompatActivity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
+
+        Intent intent = new Intent(this, RestaurantLayoutActivity.class);
+        this.startActivity(intent);
+
     }
 
     private void toggle() {
