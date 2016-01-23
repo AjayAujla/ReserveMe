@@ -1,1 +1,1 @@
-CONU Hacks
+# ConUHacks 2016
