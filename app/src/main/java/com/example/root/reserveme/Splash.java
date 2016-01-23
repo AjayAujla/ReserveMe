@@ -110,8 +110,8 @@ public class Splash extends AppCompatActivity {
         int secondsDelayed = 2;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Intent intent = new Intent(this, RestaurantLayoutActivity.class);
-                this.startActivity(intent);
+                Intent intent = new Intent(Splash.this, RestaurantLayoutActivity.class);
+                Splash.this.startActivity(intent);
                 finish();
             }
         }, secondsDelayed * 1000);
@@ -125,10 +125,6 @@ public class Splash extends AppCompatActivity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
-
-        Intent intent = new Intent(this, RestaurantLayoutActivity.class);
-        this.startActivity(intent);
-
     }
 
     private void toggle() {
