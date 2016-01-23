@@ -19,4 +19,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_table_details">TableDetailsActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    
+    <string name="time_available">5PM</string>
+    <string name="reserve">Reserve</string>
+    <string name="table_details">Seats: 5</string>
 </resources>

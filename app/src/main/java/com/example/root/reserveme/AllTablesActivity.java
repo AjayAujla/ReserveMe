@@ -24,5 +24,14 @@ public class AllTablesActivity extends AppCompatActivity {
                 AllTablesActivity.this.startActivity(intent);
             }
         });
+
+        FloatingActionButton dummyButtonSwitchToTableDetails = (FloatingActionButton) findViewById(R.id.dummy_button_to_table_details);
+        dummyButtonSwitchToTableDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AllTablesActivity.this, TableDetailsActivity.class);
+                AllTablesActivity.this.startActivity(intent);
+            }
+        });
     }
 }
