@@ -110,7 +110,7 @@ public class Splash extends AppCompatActivity {
         int secondsDelayed = 2;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Intent intent = new Intent(Splash.this, RestaurantLayoutActivity.class);
+                Intent intent = new Intent(Splash.this, AllTablesActivity.class);
                 Splash.this.startActivity(intent);
                 finish();
             }
