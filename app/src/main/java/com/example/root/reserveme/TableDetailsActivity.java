@@ -75,7 +75,7 @@ public class TableDetailsActivity extends AppCompatActivity {
     }
 
     public void reserveTable() {
-        Intent intent = new Intent(this, ReserveTableActivity.class);
+        Intent intent = new Intent(TableDetailsActivity.this, ReserveTableActivity.class);
         this.startActivity(intent);
     }
 

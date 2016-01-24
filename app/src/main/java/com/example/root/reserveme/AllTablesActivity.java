@@ -21,6 +21,7 @@ public class AllTablesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AllTablesActivity.this, RestaurantLayoutActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 AllTablesActivity.this.startActivity(intent);
             }
         });
@@ -32,6 +33,7 @@ public class AllTablesActivity extends AppCompatActivity {
                 Intent intent = new Intent(AllTablesActivity.this, ReserveTableActivity.class);
                 //TODO: Send intent to TableDetailsActivity once res/layout/activity_table_details.xml is completed
                 //Intent intent = new Intent(AllTablesActivity.this, TableDetailsActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 AllTablesActivity.this.startActivity(intent);
             }
         });

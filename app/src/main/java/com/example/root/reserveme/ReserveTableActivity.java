@@ -45,8 +45,9 @@ public class ReserveTableActivity extends AppCompatActivity {
             canConfirmReservation = false;
         }
         if(canConfirmReservation) {
-            Intent intent = new Intent(this, ReservationStatusActivity.class);
+            Intent intent = new Intent(ReserveTableActivity.this, ReservationStatusActivity.class);
             intent.putExtra(EXTRA_NAME, this.name.getText().toString());
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             this.startActivity(intent);
         }
     }
@@ -56,6 +57,7 @@ public class ReserveTableActivity extends AppCompatActivity {
      * @param view
      */
     public void cancelReservation(View view) {
+        //TODO: does not return to TableDetailsActivity. fix it
         this.finish();
     }
 }

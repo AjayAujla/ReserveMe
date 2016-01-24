@@ -14,7 +14,8 @@ public class RestaurantLayoutActivity extends AppCompatActivity {
     }
 
     public void switchToAllTablesLayout(View view) {
-        Intent intent = new Intent(this, AllTablesActivity.class);
+        Intent intent = new Intent(RestaurantLayoutActivity.this, AllTablesActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         this.startActivity(intent);
     }
 }
