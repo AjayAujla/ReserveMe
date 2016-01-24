@@ -23,4 +23,17 @@
     <string name="time_available">5PM</string>
     <string name="reserve">Reserve</string>
     <string name="table_details">Seats: 5</string>
+
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_required_seats">Enter Required Seats</string>
+
+    <string name="confirm_reservation">Confirm</string>
+    <string name="cancel_reservation">Cancel</string>
+
+    <string name="sharing_intent_subject">ReserveMe Invitation!</string>
+    <string name="sharing_intent_body">You were invited to join the table!</string>
+    <string name="sharing_intent">Share via</string>
+    <string name="share">Share</string>
 </resources>

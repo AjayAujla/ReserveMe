@@ -52,7 +52,6 @@ public class TableDetailsActivity extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -73,6 +72,11 @@ public class TableDetailsActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void reserveTable() {
+        Intent intent = new Intent(this, ReserveTableActivity.class);
+        this.startActivity(intent);
     }
 
     /**
@@ -145,10 +149,5 @@ public class TableDetailsActivity extends AppCompatActivity {
             }
             return null;
         }
-    }
-
-    public void reserveTable() {
-        Intent intent = new Intent(this, ReserveTableActivity.class);
-        this.startActivity(intent);
     }
 }

@@ -29,7 +29,9 @@ public class AllTablesActivity extends AppCompatActivity {
         dummyButtonSwitchToTableDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AllTablesActivity.this, TableDetailsActivity.class);
+                Intent intent = new Intent(AllTablesActivity.this, ReserveTableActivity.class);
+                //TODO: Send intent to TableDetailsActivity once res/layout/activity_table_details.xml is completed
+                //Intent intent = new Intent(AllTablesActivity.this, TableDetailsActivity.class);
                 AllTablesActivity.this.startActivity(intent);
             }
         });
